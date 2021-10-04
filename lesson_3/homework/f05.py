@@ -8,4 +8,4 @@ def num_system(x, p):
 
 num = 1 * 7 ** 2
 
-print(num_system(num, 3))
+print(num_system(6, 3))

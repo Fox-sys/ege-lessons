@@ -3,7 +3,7 @@ def func(s):
     while s + n < 100:
         s += 25
         n -= 5
-    return n
+    return s
 
 
 if __name__ == '__main__':
