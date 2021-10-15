@@ -1,14 +1,11 @@
-def func(d):
-    n = 1
-    while d // n > 0:
-        d -= 2
-        n += 3
-    return n
+for x in 0, 1:
+    for y in 0, 1:
+        for z in 0, 1:
+            for w in 0, 1:
+                if not (not x or y or (not z and w)):
+                    print(f'{x}  {y}  {z}  {w}')
 
-
-if __name__ == '__main__':
-    result = []
-    for i in range(10000):
-        if func(i) == 46:
-            result.append(i)
-    print(max(result) + min(result))
+# x: 4
+# y: 1
+# z: 2
+# w: 3

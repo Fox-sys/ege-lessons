@@ -1,14 +1,15 @@
-def func(x):
-    a = 0
-    b = 1
-    while x > 0:
-        a += 1
-        b *= x % 10
-        x //= 10
-    return (a, b)
+def func(d):
+    s = 5
+    n = 7
+    while s <= 3011:
+        s += d
+        n += 124
+    return n
 
 
-for i in range(1, 10000):
-    if func(i) == (2, 15):
-        print(i)
-        break
+if __name__ == '__main__':
+    result = []
+    for i in range(1, 100000):
+        if func(i) == 1247:
+            result.append(i)
+    print(result)
