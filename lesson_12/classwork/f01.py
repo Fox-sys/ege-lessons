@@ -1,20 +1,16 @@
 win_num = int(input())
 
-matrix = [[None for j in range(win_num*2)] for i in range(win_num*2)]
+matrix = [[None for j in range(win_num*3)] for i in range(win_num*3)]
 
-for i in range(0, win_num*2):
-    for j in range(0, win_num*2):
+for i in range(0, win_num*3):
+    for j in range(0, win_num*3):
         if i + j >= win_num:
             matrix[i][j] = 0
-
-print(matrix)
 
 for s in range(win_num-1, 0, -1):
     for i in range(1, s, 1):
         j = s - i
-        print(f'{j} {s} {i}')
-        next = [matrix[i+1][j], matrix[i*2][j], matrix[i][j+1], matrix[i][j*2]]
-        print(next)
+        next = [matrix[i+1][j], matrix[i*3][j], matrix[i][j+1], matrix[i][j*3]]
         odd = [x for x in next if x % 2 == 1]
         even = [x for x in next if x % 2 == 0]
         if len(even) == 0:
