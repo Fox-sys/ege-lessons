@@ -1,0 +1,8 @@
+((x in A) -> (x in P)) or (x in Q)
+((not x in A) or (x in P)) or (x in Q)
+_
+A or P or Q
+_
+A or [10; 29]
+A = [10; 29]
+len(A) = 19
